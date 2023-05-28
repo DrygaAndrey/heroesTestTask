@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Marvel';
+  src: url('./fonts/Marvel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('./fonts/Inconsolata.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenger';
+  src: url('./fonts/Avenger.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
