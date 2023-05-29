@@ -19,10 +19,15 @@ db.once('open', () => {
   console.log('succesfull connection to MongoDB');
 });
 
-// Разбор JSON-данных
-app.use(bodyParser.json());
-
 app.use(cors());
+// Разбор JSON-данных
+// Разрешаем обработку данных в формате JSON
+app.use(bodyParser.json({ limit: '10mb' }));
+
+// Разрешаем обработку данных в формате URL-кодирования
+app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
+
+
 
 
 // Использование маршрутов

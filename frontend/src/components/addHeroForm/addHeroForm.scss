@@ -1,0 +1,97 @@
+.addHeroForm {
+    transition: transform 0.3s ease;
+    font-family: 'Inconsolata';
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #000000d9;
+    border-radius: 20px;
+    align-items: center;
+    height: 400px;
+
+    button {
+        font-family: 'Inconsolata';
+    }
+
+    .cancel {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 0px;
+        border: none;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-family: auto;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    input,
+    textarea {
+        width: 350px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+        border-color: #007bff;
+    }
+
+    input::placeholder {
+        color: #999;
+    }
+
+    textarea:focus {
+        border-color: #007bff;
+    }
+
+    textarea::placeholder {
+        color: #999;
+    }
+
+
+
+    .file-input-container {
+        width: 350px;
+        height: 45px;
+        overflow: auto;
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+
+        p {
+            margin: 0px;
+        }
+    }
+
+    .hidden-file-input {
+        display: none;
+    }
+
+    .file-list {
+        margin-top: 10px;
+    }
+
+    .file-list p {
+        margin: 0;
+        padding: 4px;
+    }
+}

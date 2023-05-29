@@ -1,0 +1,19 @@
+.message {
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    height: 400px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Inconsolata';
+    button {
+        font-family: 'Inconsolata';
+    }
+}
+
