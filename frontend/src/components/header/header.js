@@ -1,14 +1,17 @@
 
 import './header.scss'
-import axios from 'axios';
 
-function Header() {
+
+function Header({ setShowAddHeroForm }) {
+    const handleFormShow = () => {
+        setShowAddHeroForm(true);
+    };
 
 
     return (
         <header >
             <h1>Superhero database</h1>
-            <button >Add Hero</button>
+            <button onClick={handleFormShow}>Add Hero</button>
         </header>
     );
 }
